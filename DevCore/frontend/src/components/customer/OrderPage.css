@@ -1,0 +1,49 @@
+/* frontend/src/components/customer/OrderPage.css */
+.order-page-container {
+  background-color: #f8f9fa;
+  min-height: calc(100vh - 60px);
+}
+
+.order-item {
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  background: white;
+}
+
+.order-summary {
+  position: sticky;
+  top: 20px;
+}
+
+.order-summary .card-header {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.btn-lg {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.1rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+@media (max-width: 768px) {
+  .order-summary {
+    position: static;
+    margin-top: 2rem;
+  }
+  
+  .order-item .row {
+    flex-direction: column;
+  }
+  
+  .order-item .col-md-5,
+  .order-item .col-md-1 {
+    margin-top: 0.5rem;
+  }
+}
