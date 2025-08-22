@@ -39,13 +39,13 @@ const Signup = () => {
   };
 
   return (
-    <div className="login-page" style={{ backgroundImage: `url(${backgroundImage})` }}>
+    <div className="login-page" >
       <div className="container-wrapper-login">
         <div className="info-container">
-          <img src={myImage} alt="Furniture" className="login-image" />
+          
           <h2>Welcome To</h2>
           <p className='logpara'>
-            Manage your furniture business with ease and efficiency, streamline operations.
+            
           </p>
         </div>
         <div className="login-container">
