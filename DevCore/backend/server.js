@@ -8,6 +8,7 @@ require("dotenv").config(); // Load .env variables
 
 const app = express();
 const PORT = process.env.PORT || 5000;
+const BASE_URL = process.env.BACKEND_URL || `http://localhost:${PORT}`; // Use .env BACKEND_URL or fallback
 
 // ✅ Middleware
 app.use(cors());
@@ -59,3 +60,5 @@ app.listen(PORT, () => {
 
   console.log(`🚀 Server running at http://localhost:${PORT}`);
 });
+
+module.exports = { BASE_URL };
