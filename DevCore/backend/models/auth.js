@@ -26,7 +26,7 @@ router.post('/forgot-password', async (req, res) => {
     user.resetPasswordExpires = Date.now() + 3600000; // 1 hour
     await user.save();
 
-    const resetLink = `http://localhost:3000/reset-password?token=${token}`;
+    const resetLink = `${BASE_URL}/api/auth/reset-password?token=${token}`;
     await transporter.sendMail({
       from: 'your-email@gmail.com',
       to: user.email,
